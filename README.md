@@ -4,12 +4,14 @@ expands "q" and "blockquote" tags with text from cited url that surrounds the qu
 
 uses jQuery, jQuery.md5
 
+DEMO: http://www.openpolitics.com/quote-context/
 
 BEFORE:
 <blockquote cite="https://www.biblegateway.com/passage/?search=Deuteronomy+8&amp;version=NRSV">
 He humbled you by letting you hunger, then by feeding you with manna, with which neither you nor 
 your ancestors were acquainted, in order to make you understand that <strong>one does not live 
 by bread alone, but by every word that comes from the mouth of the Lord</strong>.</blockquote>
+
 
 AFTER:
 
