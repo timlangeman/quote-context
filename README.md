@@ -1,10 +1,19 @@
 Quote-context
 ================
-expands "q" and "blockquote" tags with text from cited url that surrounds the quoted text.
+Expands the context of a html quotation made with the "q" or "blockquote" tag, to include the text surrounding the quotation.  
 
-uses jQuery, jQuery.md5
+Requires: blockquote tag, jQuery, jQuery.md5, simplehtmldom
+
+Approach:
+* find all blockquotes
+* if the tag includes the cite attribute, compute a hash of the url and the quote text.  Name it $hash.js
+	* check to see if there exists a previously downloaded json cache of the quote named $hash.js
+	* if the file doesn't exist, download a cache and compute a new json file, containing text that surrounds the quote
+* return json results to jQuery, which creates html divs containing the surrounding text, as well as arrows
+	
 
 DEMO: http://www.openpolitics.com/quote-context/
+
 
 BEFORE:
 <blockquote cite="https://www.biblegateway.com/passage/?search=Deuteronomy+8&amp;version=NRSV">
@@ -14,7 +23,6 @@ by bread alone, but by every word that comes from the mouth of the Lord</strong>
 
 
 AFTER:
-
 <div class="quote_arrows" id="context_up_972f988c868d325a2a64463250dd9242">
   <a href="javascript:toggle_quote('before', 'quote_before_972f988c868d325a2a64463250dd9242');">▲</a>
 </div>
