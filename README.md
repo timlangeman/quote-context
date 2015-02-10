@@ -2,6 +2,8 @@ Quote-context
 ================
 Expands the context of a html quotation made with the "q" or "blockquote" tag, to include the text surrounding the quotation.  
 
+DEMO: http://www.openpolitics.com/quote-context/
+
 Requires: blockquote tag, jQuery, jQuery.md5, simplehtmldom
 
 Approach:
@@ -11,10 +13,6 @@ Approach:
 	* if the file doesn't exist, download a cache and compute a new json file, containing text that surrounds the quote
 * return json results to jQuery, which creates html divs containing the surrounding text, as well as arrows
 	
-
-DEMO: http://www.openpolitics.com/quote-context/
-
-
 BEFORE:
 <blockquote cite="https://www.biblegateway.com/passage/?search=Deuteronomy+8&amp;version=NRSV">
 He humbled you by letting you hunger, then by feeding you with manna, with which neither you nor 
