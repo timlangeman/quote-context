@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.openpolitics.com/quote-context/lib/jquery.md5.js"></script>
+	<script type='text/javascript' src='http://www.openpolitics.com/quote-context/js/quote-context.js'>
+	<script type="text/javascript"></script>
+
+	<link rel='stylesheet' href='text/javascript' src='http://www.openpolitics.com/quote-context/css/quote-context-style.css' type='text/css' media='all' />
+</head>
+<body>
+	<h1>Quote-Context Plugin</h1>
+
+	<h2>Example</h2>
+	<p><strong>Click on the arrows</strong> to expand the quote:</p>
+
+	<blockquote cite="https://www.biblegateway.com/passage/?search=Deuteronomy+8&amp;version=NRSV">one does not live by bread alone, but by every word that comes from the mouth of the Lord</blockquote>
+
+	<h3>Code</h3>
+	<script src="https://gist.github.com/timlangeman/e7629d5893168ab13222.js"></script>
+	The jQuery plugin I created: <a href="https://github.com/timlangeman/quote-context/blob/master/js/quote-context.js">quoteContext</a>
+
+	<script type="text/javascript"> 
+		// Call plugin on all blockquotes:
+		jQuery( "blockquote" ).quoteContext(); 
+	</script>
+
+</body>
+</html>
