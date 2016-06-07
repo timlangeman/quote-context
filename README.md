@@ -1,5 +1,9 @@
-Quote-context
-================
+Deprecated: Php version superseded by python (django) service
+================================================================
+See neotext-django-server for latest version: https://github.com/neotext/neotext-django-server
+
+For historical purposes, The php version is listed below:
+
 Expands the context of a html quotation made with the "q" or "blockquote" tag, to include the text surrounding the quotation.  
 
 DEMO: http://www.openpolitics.com/quote-context/
